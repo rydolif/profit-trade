@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Settings</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<!-- 
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div> -->
+
+	<span id="up"></span>
+
+	<header class="header">
+		<div class="container header__container">
+		
+			<a href="index.html" class="header__logo logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			
+			<div class="header__info">
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="training.html">Обучение</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contacts.html">контакты</a></li>
+						<li><a href="index.html">Форум</a></li>
+					</ul>
+					<ul class="nav__login">
+						<li><img src="img/header-login.svg" alt=""><a href="login.html">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__login">
+					<ul>
+						<li><img src="img/header-login.svg" alt=""><a href="registartion.html">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<main class="main">
+
+		<div class="profile--hero support__hero">
+			<div class="container">
+				<h2>личный <b>кабинет</b></h2>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="profile--nav">
+				<ul>
+					<li><a href="profile.html">Мой профиль</a></li>
+					<li><a href="finance.html">финансы</a></li>
+					<li><a href="deposit.html">Открыть депозит</a></li>
+					<li><a href="program.html">Партнерская программа</a></li>
+					<li><a href="chat.html">Чат</a></li>
+					<li><a href="settings.html">НАСТРОЙКИ</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="settings">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						
+						<h3>Загрузить аватар</h3>
+						<div class="settings__content">
+							<div class="settings__content_avatar">
+								<img src="img/settings-avatar.png" alt="">
+							</div>
+							<div class="settings__content_info">
+								<p>
+									Чтобы загрузить аватар нажмите кнопку “Выберите файл”. Выберите картинку на компьютере, после чего на месте аватара появиться Ваша картинка. Нажмите кнопку “Сохранить”.
+									<br>Для загрузки доступны следующие форматы: <b>jpeg, png</b>
+								</p>
+								<form action="sendmail.php" class="form settings__btn" method="post">
+									<label for="file" class="btn">Выберите файл</label>
+									<input type="file" name="file" id="file">
+									<button  class="btn">Cохранить</button>
+								</form>
+							</div>
+						</div>
+
+						<h3>изменить пароль для входа</h3>
+						<form action="sendmail.php" class="form settings__form" method="post">
+							<input type="text" name="text" placeholder="Текущий пароль" required>
+							<input type="text" name="text" placeholder="Новый пароль" required>
+							<input type="text" name="text" placeholder="Повторите новый пароль" required>
+							<button class="btn">Cохранить</button>
+						</form>
+
+						<h3>Изменить Платежные реквизиты</h3>
+						<form action="sendmail.php" class="form settings__form" method="post">
+							<input type="text" name="text" placeholder="Введите номер кошелька Payeer" required>
+							<button class="btn">Cохранить</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<nav class="footer__nav nav">
+				<ul>
+					<li><a href="index.html">главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="training.html">Обучение</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contacts.html">контакты</a></li>
+					<li><a href="index.html">Форум</a></li>
+					<li><a href="login.html" class="footer__nav_login">Вход</a></li>
+					<li><a href="registartion.html" class="footer__nav_login">Регистрация</a></li>
+				</ul>
+			</nav>
+
+			<div class="footer__container">
+				<div class="footer__col">
+					<a href=""><img src="img/logo.png" alt=""></a>
+					<span>Profit Trade, </span>
+					<span>© 2018 all rights reserved</span>
+				</div>
+				<div class="footer__col">
+					<button>privacy policy</a>
+					<a href="#">Terms and Conditions</a>
+				</div>
+				<div class="footer__col">
+					<a href="tel:+90000000000">+9 000 00 000 00</a>
+					<span>Г. Город , улица улица 22а</span>
+				</div>
+				<div class="footer__col footer__col--soc">
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/od.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+				</div>
+				<div class="footer__col footer__col--up click">
+					<a href="#up" class="footer__up"></a>
+					<span>Наверх</span>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

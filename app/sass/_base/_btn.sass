@@ -1,0 +1,44 @@
+.btn
+	position: relative
+	display: inline-block
+	height: 65px
+	line-height: 65px
+	border: 1px solid $title
+	outline: none
+	padding: 0 110px
+	border-radius: 15px
+	background: transparent
+	text-align: center
+	text-transform: uppercase
+	font-size: 16px
+	color: $title
+	font-weight: 700
+	letter-spacing: 0.8px
+	margin-bottom: 30px
+	transition: all .6s
+
+	&:hover, &:focus
+		outline: none
+		border: 1px solid $title
+		background: $title
+		text-decoration: none
+		cursor: pointer
+		color: #fff
+		box-shadow: 3px 4px 3px rgba($title, 0.23)
+
+	&::before
+		display: none
+
+
+	&--yellow
+		background: #ffc14d
+		border-radius: 5px
+		color: #fff
+		height: 40px
+		line-height: 40px
+		padding: 0 75px
+		font-size: 16px
+
+		&:hover
+			box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3)
+

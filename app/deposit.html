@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Deposit</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<!-- 
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div> -->
+
+	<span id="up"></span>
+
+	<header class="header">
+		<div class="container header__container">
+		
+			<a href="index.html" class="header__logo logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			
+			<div class="header__info">
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="training.html">Обучение</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contacts.html">контакты</a></li>
+						<li><a href="index.html">Форум</a></li>
+					</ul>
+					<ul class="nav__login">
+						<li><img src="img/header-login.svg" alt=""><a href="login.html">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__login">
+					<ul>
+						<li><img src="img/header-login.svg" alt=""><a href="registartion.html">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<main class="main">
+
+		<div class="profile--hero support__hero">
+			<div class="container">
+				<h2>личный <b>кабинет</b></h2>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="profile--nav">
+				<ul>
+					<li><a href="profile.html">Мой профиль</a></li>
+					<li><a href="finance.html">финансы</a></li>
+					<li><a href="deposit.html">Открыть депозит</a></li>
+					<li><a href="program.html">Партнерская программа</a></li>
+					<li><a href="chat.html">Чат</a></li>
+					<li><a href="settings.html">НАСТРОЙКИ</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="deposit">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-xl-9 offset-xl-1">
+
+						<div class="deposit__container deposit__beginner">
+
+							<ul class="deposit__list">
+								<li>
+									<a href="#" class="deposit__list_item deposit__list_item--active">
+										beginner
+										<span>(недоступен)</span>
+									</a>
+								</li>
+								<li class="deposit__list_item">basic
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">experience
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">partner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">Owner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+							</ul>
+
+							<div class="deposit__content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+								</p>
+
+								<div class="deposit__content_item">
+									<span>Доступное количество депозитов</span>
+									<b>2</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<span>Срок работы депозита:</span>
+									<b>24 часа</b>
+								</div>
+								<div class="deposit__content_item">
+									<span>Доходность:</span>
+									<b>100% в сутки</b>
+								</div>
+
+								<div class="deposit__content_item deposit__content_item--price">
+									<div>
+										<span>Ваш вклад:</span>
+										<div id="beginner--custom-price">
+											<div id="beginner--price" class="ui-slider-handle"></div>
+											<span id="beginner__price_min" class="min"></span>
+											<span id="beginner__price_max" class="max"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="deposit__content_btn">
+									<button type="submit" class="btn" name="submit">создать депозит</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="deposit__container deposit__basic">
+
+							<ul class="deposit__list">
+								<li class="deposit__list_item deposit__list_item--on">beginner
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--active">basic
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">experience
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">partner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">Owner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+							</ul>
+
+							<div class="deposit__content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+								</p>
+
+								<div class="deposit__content_item">
+									<span>Доступное количество депозитов</span>
+									<b>2</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<div class="deposit__content_item--block">
+										<span>Срок работы <br>депозита:</span>
+										<div id="basic--date">
+											<div id="basic--date-custom" class="ui-slider-handle"></div>
+											<span id="basic__date_min" class="min"></span>
+											<span id="basic__date_max" class="max"></span>
+										</div>
+									</div>
+									<div class="deposit__content_item--block">
+										<label for="amount">Доходность:</label>
+										<input type="text" id="basic--percent" readonly>
+									</div>
+								</div>
+
+								<div class="deposit__content_item deposit__content_item--price">
+									<div>
+										<span>Ваш вклад:</span>
+										<div id="basic--custom-price">
+											<div id="basic--price" class="ui-slider-handle"></div>
+											<span id="basic__price_min" class="min"></span>
+											<span id="basic__price_max" class="max"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="deposit__content_btn">
+									<button type="submit" class="btn" name="submit">создать депозит</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="deposit__container deposit__experience">
+
+							<ul class="deposit__list">
+								<li class="deposit__list_item deposit__list_item--on">beginner
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">basic
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--active">experience
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">partner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">Owner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+							</ul>
+
+							<div class="deposit__content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+								</p>
+
+								<div class="deposit__content_item">
+									<span>Доступное количество депозитов</span>
+									<b>2</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<div class="deposit__content_item--block">
+										<span>Срок работы <br>депозита:</span>
+										<div id="experience--date">
+											<div id="experience--date-custom" class="ui-slider-handle"></div>
+											<span id="experience__date_min" class="min"></span>
+											<span id="experience__date_max" class="max"></span>
+										</div>
+									</div>
+									<div class="deposit__content_item--block">
+										<label for="amount">Доходность:</label>
+										<input type="text" id="experience--percent" readonly>
+									</div>
+								</div>
+
+								<div class="deposit__content_item deposit__content_item--price">
+									<div>
+										<span>Ваш вклад:</span>
+										<div id="experience--custom-price">
+											<div id="experience--price" class="ui-slider-handle"></div>
+											<span id="experience__price_min" class="min"></span>
+											<span id="experience__price_max" class="max"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="deposit__content_btn">
+									<button type="submit" class="btn" name="submit">создать депозит</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="deposit__container deposit__partner">
+
+							<ul class="deposit__list">
+								<li class="deposit__list_item deposit__list_item--on">beginner
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">basic
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">experience
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--active">partner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item">Owner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+							</ul>
+
+							<div class="deposit__content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+								</p>
+
+								<div class="deposit__content_item">
+									<span>Доступное количество депозитов</span>
+									<b>2</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<div class="deposit__content_item--block">
+										<span>Срок работы <br>депозита:</span>
+										<div id="partner--date">
+											<div id="partner--date-custom" class="ui-slider-handle"></div>
+											<span id="partner__date_min" class="min"></span>
+											<span id="partner__date_max" class="max"></span>
+										</div>
+									</div>
+									<div class="deposit__content_item--block">
+										<label for="amount">Доходность:</label>
+										<input type="text" id="partner--percent" readonly>
+									</div>
+								</div>
+
+								<div class="deposit__content_item deposit__content_item--price">
+									<div>
+										<span>Ваш вклад:</span>
+										<div id="partner--custom-price">
+											<div id="partner--price" class="ui-slider-handle"></div>
+											<span id="partner__price_min" class="min"></span>
+											<span id="partner__price_max" class="max"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="deposit__content_btn">
+									<button type="submit" class="btn" name="submit">создать депозит</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="deposit__container deposit__owner">
+
+							<ul class="deposit__list">
+								<li class="deposit__list_item deposit__list_item--on">beginner
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">basic
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">experience
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--on">partner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+								<li class="deposit__list_item deposit__list_item--active">Owner
+									<br>
+									<span>(недоступен)</span>
+								</li>
+							</ul>
+
+							<div class="deposit__content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+								</p>
+
+								<div class="deposit__content_item">
+									<span>Доступное количество депозитов</span>
+									<b>2</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<span>Срок работы <br>депозита:</span>
+									<b>1 год</b>
+								</div>
+
+								<div class="deposit__content_item">
+									<span>Доходность:</span>
+									<b>140%</b>
+								</div>
+
+								<div class="deposit__content_item deposit__content_item--price">
+									<div>
+										<span>Ваш вклад:</span>
+										<div id="owner--custom-price">
+											<div id="owner--price" class="ui-slider-handle"></div>
+											<span id="owner__price_min" class="min"></span>
+											<span id="owner__price_max" class="max"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="deposit__content_btn">
+									<button type="submit" class="btn" name="submit">создать депозит</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="finance">
+			<div class="container">
+
+				<h3>Статистика депозитов</h3>
+
+				<ul class="finance__list">
+					<li>
+						<span>id</span>
+						<span>Login</span>
+						<span>Сумма</span>
+						<span>Начисления</span>
+						<span>Дата</span>
+						<span>Статус</span>
+					</li>
+					<li>
+						<span>1</span>
+						<span>Login</span>
+						<span class="green">200</span>
+						<span>0/1</span>
+						<span>12.08.2018</span>
+						<span>12.08.2018</span>
+					</li>
+					<li>
+						<span>2</span>
+						<span>Login</span>
+						<span class="green">200</span>
+						<span>0/1</span>
+						<span>12.08.2018</span>
+						<span>12.08.2018</span>
+					</li>
+					<li>
+						<span>3</span>
+						<span>Login</span>
+						<span class="green">200</span>
+						<span>0/1</span>
+						<span>12.08.2018</span>
+						<span>12.08.2018</span>
+					</li>
+					<li>
+						<span>4</span>
+						<span>Login</span>
+						<span class="green">200</span>
+						<span>0/1</span>
+						<span>12.08.2018</span>
+						<span>12.08.2018</span>
+					</li>
+					<li>
+						<span>5</span>
+						<span>Login</span>
+						<span class="green">200</span>
+						<span>0/1</span>
+						<span>12.08.2018</span>
+						<span>12.08.2018</span>
+					</li>
+
+				</ul>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<nav class="footer__nav nav">
+				<ul>
+					<li><a href="index.html">главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="training.html">Обучение</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contacts.html">контакты</a></li>
+					<li><a href="index.html">Форум</a></li>
+					<li><a href="login.html" class="footer__nav_login">Вход</a></li>
+					<li><a href="registartion.html" class="footer__nav_login">Регистрация</a></li>
+				</ul>
+			</nav>
+
+			<div class="footer__container">
+				<div class="footer__col">
+					<a href=""><img src="img/logo.png" alt=""></a>
+					<span>Profit Trade, </span>
+					<span>© 2018 all rights reserved</span>
+				</div>
+				<div class="footer__col">
+					<a href="#">privacy policy</a>
+					<a href="#">Terms and Conditions</a>
+				</div>
+				<div class="footer__col">
+					<a href="tel:+90000000000">+9 000 00 000 00</a>
+					<span>Г. Город , улица улица 22а</span>
+				</div>
+				<div class="footer__col footer__col--soc">
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/od.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+				</div>
+				<div class="footer__col footer__col--up click">
+					<a href="#up" class="footer__up"></a>
+					<span>Наверх</span>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+	
+	$( function() {
+		// назви відповідають логіці
+		// перше слово назва блоку
+		// date - кількість днів
+		// price - кількість грошей
+		// min- мінімальне значення
+		// max- максимальне значення
+
+		//------------------------------------------данні в переміних-------------------------
+
+			//--------------------------------------calculator-beginner-----------------------------
+				var beginner__date_min = 0;
+				$( "#beginner__date_min" ).text(beginner__date_min);
+
+				var beginner__date_max = 1;
+				$( "#beginner__date_max" ).text(beginner__date_max + " дней");
+
+				var beginner__price_min = 100;
+				$( "#beginner__price_min" ).text(beginner__price_min);
+
+				var beginner__price_max = 500;
+				$( "#beginner__price_max" ).text(beginner__price_max + " тенге");
+
+			//--------------------------------------calculator-basic-----------------------------
+				var basic__date_min = 1;
+				$( "#basic__date_min" ).text(basic__date_min);
+
+				var basic__date_max = 31;
+				$( "#basic__date_max" ).text(basic__date_max + " дней");
+
+				var basic__price_min = 1000;
+				$( "#basic__price_min" ).text(basic__price_min);
+
+				var basic__price_max = 5000;
+				$( "#basic__price_max" ).text(basic__price_max + " тенге");
+
+			//--------------------------------------calculator-experience-----------------------------
+				var experience__date_min = 1;
+				$( "#experience__date_min" ).text(experience__date_min);
+
+				var experience__date_max = 31;
+				$( "#experience__date_max" ).text(experience__date_max + " дней");
+
+				var experience__price_min = 10000;
+				$( "#experience__price_min" ).text(experience__price_min);
+
+				var experience__price_max = 25000;
+				$( "#experience__price_max" ).text(experience__price_max + " тенге");
+
+			//--------------------------------------calculator-partner-----------------------------
+				var partner__date_min = 1;
+				$( "#partner__date_min" ).text(partner__date_min);
+
+				var partner__date_max = 31;
+				$( "#partner__date_max" ).text(partner__date_max + " дней");
+
+				var partner__price_min = 50000;
+				$( "#partner__price_min" ).text(partner__price_min);
+
+				var partner__price_max = 250000;
+				$( "#partner__price_max" ).text(partner__price_max + " тенге");		
+
+			//--------------------------------------calculator-owner-----------------------------
+				var owner__date_min = 0;
+				$( "#owner__date_min" ).text(owner__date_min);
+
+				var owner__date_max = 1;
+				$( "#owner__date_max" ).text(owner__date_max + " дней");
+
+				var owner__price_min = 1000000;
+				$( "#owner__price_min" ).text(owner__price_min);
+
+				var owner__price_max = 10000000;
+				$( "#owner__price_max" ).text(owner__price_max + " тенге");
+
+
+		//------------------------------------------калькулятори беруть данні з переміних-------------------------
+
+			//--------------------------------------calculator-beginner-----------------------------
+			  //   var beginner = $( "#beginner--date-custom" );
+
+			  //   $( "#beginner--date" ).slider({
+					// range: "min",
+					// value: 0,
+					// min: beginner__date_min,
+					// max: beginner__date_max,
+			  //     create: function() {
+			  //       beginner.text( $( this ).slider( "value" ) );
+			  //     },
+			  //     slide: function( event, ui ) {
+			  //       beginner.text( ui.value );
+			  //       $( "#beginner--percent" ).val( ui.value * 100 + "%");
+			  //     }
+			  //   });
+			  //   $( "#beginner--percent" ).val( 0 + "%"  );
+
+				//------------------------------------
+		 		var beginnerprice = $( "#beginner--price" );
+			    $( "#beginner--custom-price" ).slider({
+					range: "min",
+					value: 0,
+					min: beginner__price_min,
+					max: beginner__price_max,
+					create: function() {
+			        	beginnerprice.text( $( this ).slider( "value" ) );
+			     	},
+			     	slide: function( event, ui ) {
+			        	beginnerprice.text( ui.value );
+			      	}
+			    });
+
+
+			//--------------------------------------calculator-basic-----------------------------
+			    var basic = $( "#basic--date-custom" );
+			    $( "#basic--date" ).slider({
+					range: "min",
+					value: 0,
+					min: basic__date_min,
+					max: basic__date_max,
+			      create: function() {
+			        basic.text( $( this ).slider( "value" ) );
+			      },
+			      slide: function( event, ui ) {
+			        basic.text( ui.value );
+			        $( "#basic--percent" ).val( ui.value * 3 + 7 + "%");
+			      }
+			    });
+			    $( "#basic--percent" ).val( 10 + "%"  );
+
+				//------------------------------------
+		 		var basicprice = $( "#basic--price" );
+			    $( "#basic--custom-price" ).slider({
+					range: "min",
+					value: 0,
+					min: basic__price_min,
+					max: basic__price_max,
+					create: function() {
+			        	basicprice.text( $( this ).slider( "value" ) );
+			     	},
+			     	slide: function( event, ui ) {
+			        	basicprice.text( ui.value );
+			      	}
+			    });
+
+
+			//--------------------------------------calculator-experience-----------------------------
+			    var experience = $( "#experience--date-custom" );
+			    $( "#experience--date" ).slider({
+					range: "min",
+					value: 1,
+					min: experience__date_min,
+					max: experience__date_max,
+			      create: function() {
+			        experience.text( $( this ).slider( "value" ) );
+			      },
+			      slide: function( event, ui ) {
+			        experience.text( ui.value );
+			        $( "#experience--percent" ).val( ui.value * 3 + 7 + "%");
+			      }
+			    });
+			    $( "#experience--percent" ).val( 10 + "%" );
+
+				//------------------------------------
+		 		var experienceprice = $( "#experience--price" );
+			    $( "#experience--custom-price" ).slider({
+					range: "min",
+					value: 1,
+					min: experience__price_min,
+					max: experience__price_max,
+					create: function() {
+			        	experienceprice.text( $( this ).slider( "value" ) );
+			     	},
+			     	slide: function( event, ui ) {
+			        	experienceprice.text( ui.value );
+			      	}
+			    });
+
+
+			//--------------------------------------calculator-partner-----------------------------
+			    var partner = $( "#partner--date-custom" );
+			    $( "#partner--date" ).slider({
+					range: "min",
+					value: 0,
+					min: partner__date_min,
+					max: partner__date_max,
+			      create: function() {
+			        partner.text( $( this ).slider( "value" ) );
+			      },
+			      slide: function( event, ui ) {
+			        partner.text( ui.value );
+			        $( "#partner--percent" ).val( ui.value * 3 + 7 + "%" );
+			      }
+			    });
+			    $( "#partner--percent" ).val( 10 + "%" );
+
+				//------------------------------------
+		 		var partnerprice = $( "#partner--price" );
+			    $( "#partner--custom-price" ).slider({
+					range: "min",
+					value: 0,
+					min: partner__price_min,
+					max: partner__price_max,
+					create: function() {
+			        	partnerprice.text( $( this ).slider( "value" ) );
+			     	},
+			     	slide: function( event, ui ) {
+			        	partnerprice.text( ui.value );
+			      	}
+			    });
+
+
+			//--------------------------------------calculator-owner-----------------------------
+			  	//     var owner = $( "#owner--date-custom" );
+				  //   $( "#owner--date" ).slider({
+						// range: "min",
+						// value: 0,
+						// min: 0,
+						// max: 1,
+				  //     create: function() {
+				  //       owner.text( $( this ).slider( "value" ) );
+				  //     },
+				  //     slide: function( event, ui ) {
+				  //       owner.text( ui.value );
+				  //       $( "#owner--percent" ).val( ui.value * 100 + "%");
+				  //     }
+				  //   });
+				  //   $( "#owner--percent" ).val( 0 + "%"  );
+
+		 		var ownerprice = $( "#owner--price" );
+			    $( "#owner--custom-price" ).slider({
+					range: "min",
+					value: 0,
+					min: 1000000,
+					max: 10000000,
+					create: function() {
+			        	ownerprice.text( $( this ).slider( "value" ) );
+			     	},
+			     	slide: function( event, ui ) {
+			        	ownerprice.text( ui.value );
+			      	}
+			    });
+
+	  } );
+
+  
+  </script>
+
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>

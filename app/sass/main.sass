@@ -1557,6 +1557,372 @@
 		border: none
 
 
+.deposit
+	padding-top: 50px
+
+	&__container
+		display: flex
+		justify-content: space-between
+	
+	&__content
+		margin-left: 65px
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+		padding: 35px 90px 50px
+		margin-bottom: 40px
+		color: #a6a6a6
+		font-weight: 300
+		width: 60%
+
+		p
+			position: relative
+			text-align: center
+			font-size: 12px
+			font-weight: 300
+			margin-bottom: 45px
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+				width: 30px
+				height: 1px
+
+		&_item
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-bottom: 40px
+
+			label
+				margin-bottom: 40px
+				display: block
+				text-align: right
+
+			input
+				color: #1ecdff !important
+				border: 1px solid #d7d7d7 !important
+				width: 80px
+				text-align: center
+				padding: 0
+				display: block
+				margin-left: auto
+				margin-right: 0
+				height: 30px
+				line-height: 30px
+				border-radius: 20px
+
+
+			&--block
+				width: 47%
+				position: relative
+				span
+					display: block
+					margin-bottom: 40px
+
+			&--price
+
+				span
+					display: block
+					margin-bottom: 40px
+
+				div
+					width: 100%
+					position: relative
+
+
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				content: ''
+				position: absolute
+				right: -10px
+				top: 50%
+				transform: translate(0, -50%)
+				width: 20px
+				height: 20px
+				border: 2px solid #1ecdff
+				border-radius: 50%
+				background: #fff
+				transition: all .2s
+				cursor: pointer
+
+		.ui-slider-horizontal .ui-slider-handle
+			top: -35px
+			width: auto
+			padding: 0 10px
+			height: 20px
+			background: #1ecdff
+			color: #fff
+			font-weight: 600
+			text-align: center
+			line-height: 20px
+			transform: translate(-30%, 0)
+			transition: all .2s
+			border: none !important
+			border-radius: 30px
+			cursor: pointer
+
+		.ui-slider-horizontal .ui-slider-range-min
+			border-radius: 5px
+			border: 1px solid #fff
+			background: #1ecdff
+			transition: all .2s
+			cursor: pointer
+
+		&_btn
+			text-align: right
+			margin-top: 90px
+
+		.btn
+			margin-right: 0
+			margin-left: auto
+			padding: 0 33px
+			height: 45px
+			line-height: 45px
+			font-size: 14px
+			font-weight: 500
+			border-color: #1ecdff
+			color: #1ecdff
+			margin-bottom: 0
+
+			&:hover, &:focus, &:focus
+				background: #1ecdff
+				color: #fff
+
+	&__list
+		width: 38%
+
+		&_item
+			position: relative
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-size: 24px
+			line-height: 1
+			font-weight: 700
+			color: #dbdbdb
+			transition: all .6s
+
+			span
+				font-size: 14px
+				color: #dbdbdb
+				text-transform: none
+				padding-left: 25px
+				display: block
+
+
+			&--on
+				color: #9b9b9b
+
+				span
+					display: none
+
+			&--active
+				padding-left: 190px
+
+				&::after
+					content: ''
+					position: absolute
+					width: 150px
+					height: 3px
+					left: 0
+					top: 50%
+					transform: translate(0, -50%)
+
+				&::before
+					display: none
+
+				span
+					display: none
+	
+	&__beginner
+		b
+			color: #ffc14d
+
+		.deposit
+			&__list_item--active
+				color: #ffc14d
+				&::after
+					background: #ffc14d
+
+			&__content
+				p
+					&::before
+						background: #ffc14d
+
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				border: 2px solid #ffc14d
+		
+		.ui-slider-horizontal .ui-slider-handle
+			background: #ffc14d
+
+		.ui-slider-horizontal .ui-slider-range-min
+			background: #ffc14d
+
+		.btn
+			border-color: #ffc14d
+			color: #ffc14d
+
+			&:hover, &:focus
+				background: #ffc14d
+
+		input
+			color: #ffc14d !important
+
+	&__basic
+		b
+			color: #1ecdff
+
+		.deposit
+			&__list_item--active
+				color: #1ecdff
+	
+				&::after
+					background: #1ecdff
+
+			&__content
+				p
+					&::before
+						background: #1ecdff
+
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				border: 2px solid #1ecdff
+		
+		.ui-slider-horizontal .ui-slider-handle
+			background: #1ecdff
+
+		.ui-slider-horizontal .ui-slider-range-min
+			background: #1ecdff
+
+		.btn
+			border-color: #1ecdff
+			color: #1ecdff
+
+			&:hover, &:focus
+				background: #1ecdff
+
+		input
+			color: #1ecdff !important
+
+	&__experience
+		b
+			color: #fc6d1f
+
+		.deposit
+			&__list_item--active
+				color: #fc6d1f
+				&::after
+					background: #fc6d1f
+
+			&__content
+				p
+					&::before
+						background: #fc6d1f
+
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				border: 2px solid #fc6d1f
+		
+		.ui-slider-horizontal .ui-slider-handle
+			background: #fc6d1f
+
+		.ui-slider-horizontal .ui-slider-range-min
+			background: #fc6d1f
+
+		.btn
+			border-color: #fc6d1f
+			color: #fc6d1f
+
+			&:hover, &:focus
+				background: #fc6d1f
+
+		input
+			color: #fc6d1f !important
+
+	&__partner
+		b
+			color: #7ab18b
+
+		.deposit
+			&__list_item--active
+				color: #7ab18b
+				&::after
+					background: #7ab18b
+
+			&__content
+				p
+					&::before
+						background: #7ab18b
+
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				border: 2px solid #7ab18b
+		
+		.ui-slider-horizontal .ui-slider-handle
+			background: #7ab18b
+
+		.ui-slider-horizontal .ui-slider-range-min
+			background: #7ab18b
+
+		.btn
+			border-color: #7ab18b
+			color: #7ab18b
+
+			&:hover, &:focus
+				background: #7ab18b
+
+		input
+			color: #7ab18b !important
+	
+	&__owner
+		b
+			color: #000
+
+		.deposit
+			&__list_item--active
+				color: #000
+				&::after
+					background: #000
+
+			&__content
+				p
+					&::before
+						background: #000
+	
+		.ui-slider-horizontal .ui-slider-range-min
+			&::before
+				border: 2px solid #000
+		
+		.ui-slider-horizontal .ui-slider-handle
+			background: #000
+
+		.ui-slider-horizontal .ui-slider-range-min
+			background: #000
+
+		.btn
+			border-color: #000
+			color: #000
+
+			&:hover, &:focus
+				background: #000
+
+		input
+			color: #000 !important
+	
+	.min, .max
+		position: absolute
+		bottom: -20px
+		color: #c9c9c9
+		font-size: 14px
+		margin: 0
+
+	.min
+		left: 0
+	
+	.max
+		right: 0
 
 
 

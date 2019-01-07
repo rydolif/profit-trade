@@ -37,6 +37,19 @@
 
 
 @media only screen and (max-width : 992px)
+	
+	.deposit
+		&__content
+			padding: 40px
+
+		&__list
+
+			&_item--active
+				padding-left: 110px
+
+				&::after
+					width: 90px
+
 	.finance
 		&__list
 			li
@@ -129,6 +142,17 @@
 		&--active
 			right: 0
 
+		&__login
+			
+			li
+				position: relative
+				padding-left: 35px
+
+			img
+				position: absolute
+				left: 0
+				top: -4px
+
 	.hamburger
 		display: block
 
@@ -199,6 +223,23 @@
 
 	
 @media only screen and (max-width : 767px)
+	
+	.deposit
+		&__list
+			width: 30%
+			&_item
+				font-size: 16px
+
+				&--active
+					padding-left: 40px
+
+					&::after
+						width: 25px
+
+		&__content
+			margin-left: 15px
+			width: 65%
+
 	.chat
 		padding: 15px
 
@@ -450,9 +491,35 @@
 
 
 @media only screen and (max-width : 480px)
+
+	.deposit
+		&__container
+			flex-wrap: wrap
+
+
+		&__list
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+
+			&_item
+				margin-right: 30px
+
+				&--active
+					padding-left: 30px
+
+					&::after
+						top: 7px
+
+
+		&__content
+			width: 100%
+			margin-left: 0
+			padding: 20px
+
+
 	.chat__content
 		
-
 		&_item
 			padding-left: 55px
 
@@ -485,6 +552,7 @@
 		&__list li
 			padding-left: 0
 			padding-right: 0
+			justify-content: flex-start
 
 	.profile
 		&--nav

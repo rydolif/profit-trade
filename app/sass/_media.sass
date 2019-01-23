@@ -21,6 +21,30 @@
 		&__slide
 			padding: 20px 15px 25px
 
+			&--active
+				border: 2px solid $title
+
+				&::before
+					display: none
+
+				.step__button
+					padding-left: 25px
+					padding-right: 65px
+					width: 186px
+				
+				h3, b
+					color: $title
+
+				.step__button, .step__question
+					background: $title
+
+				.step__button
+					span
+						border: 1px solid $title
+
+						&::before, &::after
+							background: $title
+
 		&__button
 			right: 20px
 
@@ -264,7 +288,7 @@
 			margin-bottom: 15px
 
 		p
-			margin-bottom: 15px
+			margin-bottom: 35px
 
 		&__content_avatar
 			margin-right: 20px
@@ -274,6 +298,14 @@
 
 		&__btn
 			flex-direction: column
+
+			div
+				flex-direction: column
+				width: 100%
+				margin-bottom: 15px
+
+				.btn:first-child
+					margin-right: 0
 
 			.btn
 				width: 100%
@@ -341,7 +373,7 @@
 			flex-direction: column
 
 			img
-				margin-top: -175px
+				margin-top: -172px
 				margin-bottom: 20px
 				margin-right: auto
 				margin-left: auto
@@ -468,7 +500,15 @@
 
 
 @media only screen and (max-width : 576px)
+	.about
+		&__platforms_item
+			min-width: 200px
 
+			br
+				display: none
+
+		&__advantages img
+			height: 50px
 
 	.footer
 		&__col
@@ -575,7 +615,7 @@
 
 	.about
 		&__platforms_list, &__advantages_list, &__base_list
-			justify-content: center
+			justify-content: space-around
 			text-align: center
 
 		&__info .container
@@ -662,6 +702,20 @@
 
 	.step__pagination .swiper-pagination-bullet-active
 		width: 30px
+
+	.step__slide::before
+		display: none
+
+	.statistics__item
+		text-align: center
+
+	.systems__content
+		flex-wrap: wrap
+		margin-bottom: 15px
+		a, p
+			width: 100%
+			margin-bottom: 15px
+
 
 
 @media only screen and (max-width : 400px)

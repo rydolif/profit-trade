@@ -42,7 +42,6 @@
 						<li><a href="training.html">Обучение</a></li>
 						<li><a href="faq.html">FAQ</a></li>
 						<li><a href="contacts.html">контакты</a></li>
-						<li><a href="index.html">Форум</a></li>
 					</ul>
 					<ul class="nav__login">
 						<li><img src="img/header-login.svg" alt=""><a href="login.html">Вход</a></li>
@@ -98,8 +97,11 @@
 									<br>Для загрузки доступны следующие форматы: <b>jpeg, png</b>
 								</p>
 								<form action="sendmail.php" class="form settings__btn" method="post">
-									<label for="file" class="btn">Выберите файл</label>
-									<input type="file" name="file" id="file">
+									<div>
+										<label for="file" class="btn">Выберите файл</label>
+										<input type="file" name="file" id="file">
+										<a href="#" class="">Начать загрузку аватара</a>
+									</div>
 									<button  class="btn">Cохранить</button>
 								</form>
 							</div>
@@ -149,7 +151,7 @@
 					<span>© 2018 all rights reserved</span>
 				</div>
 				<div class="footer__col">
-					<button>privacy policy</a>
+					<a href="#">privacy policy</a>
 					<a href="#">Terms and Conditions</a>
 				</div>
 				<div class="footer__col">

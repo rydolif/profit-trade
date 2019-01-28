@@ -207,8 +207,6 @@
 											<span id="basic__price_max" class="max"></span>
 										</div>
 									</div>
-									<input type="text" id="deposit--info" value="text">
-									<input type="text" id="deposit--info2" value="text">
 								</div>
 
 								<div class="deposit__content_btn">
@@ -307,6 +305,7 @@
 								</li>
 							</ul>
 
+								
 							<div class="deposit__content">
 								<p>
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
@@ -347,6 +346,7 @@
 									<button type="submit" class="btn" name="submit">создать депозит</button>
 								</div>
 							</div>
+
 						</form>
 
 						<form class="deposit__container deposit__owner">
@@ -393,7 +393,6 @@
 									<b>140%</b>
 								</div>
 
-								<div class="deposit__content_item deposit__content_item--price">
 									<div>
 										<span>Ваш вклад:</span>
 										<div id="owner--custom-price">
@@ -402,7 +401,6 @@
 											<span id="owner__price_max" class="max"></span>
 										</div>
 									</div>
-								</div>
 
 								<div class="deposit__content_btn">
 									<button type="submit" class="btn" name="submit">создать депозит</button>
@@ -534,7 +532,7 @@
 
     //------------------------------------------данні в переміних-------------------------
 
-      //--------------------------------------calculator-beginner-----------------------------
+    //--------------------------------------calculator-beginner-----------------------------
         var beginner__date_min = 0;
         $( "#beginner__date_min" ).text(beginner__date_min);
 
@@ -547,11 +545,11 @@
         var beginner__price_max = 500;
         $( "#beginner__price_max" ).text(beginner__price_max + " тенге");
 
-      //--------------------------------------calculator-basic-----------------------------
+    //--------------------------------------calculator-basic-----------------------------
         var basic__date_min = 1;
         $( "#basic__date_min" ).text(basic__date_min);
 
-        var basic__date_max = 31;
+        var basic__date_max = 3;
         $( "#basic__date_max" ).text(basic__date_max + " дней");
 
         var basic__price_min = 1000;
@@ -560,7 +558,7 @@
         var basic__price_max = 5000;
         $( "#basic__price_max" ).text(basic__price_max + " тенге");
 
-      //--------------------------------------calculator-experience-----------------------------
+    //--------------------------------------calculator-experience-----------------------------
         var experience__date_min = 1;
         $( "#experience__date_min" ).text(experience__date_min);
 
@@ -573,12 +571,12 @@
         var experience__price_max = 25000;
         $( "#experience__price_max" ).text(experience__price_max + " тенге");
 
-      //--------------------------------------calculator-partner-----------------------------
+    //--------------------------------------calculator-partner-----------------------------
         var partner__date_min = 1;
-        $( "#partner__date_min" ).text(partner__date_min);
+        $( "#partner__date_min" ).text(partner__date_min * 10);
 
-        var partner__date_max = 31;
-        $( "#partner__date_max" ).text(partner__date_max + " дней");
+        var partner__date_max = 3;
+        $( "#partner__date_max" ).text(partner__date_max * 10 + " дней");
 
         var partner__price_min = 50000;
         $( "#partner__price_min" ).text(partner__price_min);
@@ -586,7 +584,7 @@
         var partner__price_max = 250000;
         $( "#partner__price_max" ).text(partner__price_max + " тенге");   
 
-      //--------------------------------------calculator-owner-----------------------------
+    //--------------------------------------calculator-owner-----------------------------
         var owner__date_min = 0;
         $( "#owner__date_min" ).text(owner__date_min);
 
@@ -602,76 +600,76 @@
 
     //------------------------------------------калькулятори беруть данні з переміних-------------------------
 
-      //--------------------------------------calculator-beginner-----------------------------
-        //   var beginner = $( "#beginner--date-custom" );
+    	//--------------------------------------calculator-beginner-----------------------------
+			//   var beginner = $( "#beginner--date-custom" );
 
-        //   $( "#beginner--date" ).slider({
-          // range: "min",
-          // value: 0,
-          // min: beginner__date_min,
-          // max: beginner__date_max,
-        //     create: function() {
-        //       beginner.text( $( this ).slider( "value" ) );
-        //     },
-        //     slide: function( event, ui ) {
-        //       beginner.text( ui.value );
-        //       $( "#beginner--percent" ).val( ui.value * 100 + "%");
-        //     }
-        //   });
-        //   $( "#beginner--percent" ).val( 0 + "%"  );
+			//   $( "#beginner--date" ).slider({
+			// range: "min",
+			// value: 0,
+			// min: beginner__date_min,
+			// max: beginner__date_max,
+			//     create: function() {
+			//       beginner.text( $( this ).slider( "value" ) );
+			//     },
+			//     slide: function( event, ui ) {
+			//       beginner.text( ui.value );
+			//       $( "#beginner--percent" ).val( ui.value * 100 + "%");
+			//     }
+			//   });
+			//   $( "#beginner--percent" ).val( 0 + "%"  );
 
-        //------------------------------------
-        var beginnerprice = $( "#beginner--price" );
-          $( "#beginner--custom-price" ).slider({
-          range: "min",
-          value: 0,
-          min: beginner__price_min,
-          max: beginner__price_max,
-          create: function() {
-                beginnerprice.text( $( this ).slider( "value" ) );
-            },
-            slide: function( event, ui ) {
-                beginnerprice.text( ui.value );
-              }
-          });
-
-
-      //--------------------------------------calculator-basic-----------------------------
-          var basic = $( "#basic--date-custom" );
-          $( "#basic--date" ).slider({
-          range: "min",
-          value: 0,
-          min: basic__date_min,
-          max: basic__date_max,
-            create: function() {
-              basic.text( $( this ).slider( "value" ) );
-            },
-            slide: function( event, ui ) {
-              basic.text( ui.value );
-              $( "#basic--percent" ).val( ui.value * 3 + 7 + "%");
-              $( "#deposit--info" ).val(ui.value);
-            }
-          });
-          $( "#basic--percent" ).val( 10 + "%"  );
-
-        //------------------------------------
-        var basicprice = $( "#basic--price" );
-          $( "#basic--custom-price" ).slider({
-          range: "min",
-          value: 0,
-          min: basic__price_min,
-          max: basic__price_max,
-          create: function() {
-                basicprice.text( $( this ).slider( "value" ) );
-            },
-            slide: function( event, ui ) {
-                basicprice.text( ui.value );
-                $( "#deposit--info2" ).val(ui.value);
-              }
-          });
+	        //------------------------------------
+		        var beginnerprice = $( "#beginner--price" );
+		          $( "#beginner--custom-price" ).slider({
+		          range: "min",
+		          value: 0,
+		          min: beginner__price_min,
+		          max: beginner__price_max,
+		          create: function() {
+		                beginnerprice.text( $( this ).slider( "value" ) );
+		            },
+		            slide: function( event, ui ) {
+		                beginnerprice.text( ui.value );
+		              }
+		          });
 
 
-      //--------------------------------------calculator-experience-----------------------------
+    	//--------------------------------------calculator-basic-----------------------------
+			var basic = $( "#basic--date-custom" );
+			$( "#basic--date" ).slider({
+				range: "min",
+				value: 1,
+				min: basic__date_min,
+				max: basic__date_max,
+				create: function() {
+				  basic.text( $( this ).slider( "value" ) );
+				},
+				slide: function( event, ui ) {
+				  basic.text( ui.value * 10 );
+				  $( "#basic--percent" ).val( ui.value * 3 + 7 + "%");
+				  $( "#deposit--info" ).val(ui.value);
+				}
+			});
+			$( "#basic--percent" ).val( 25 + "%"  );
+
+			//------------------------------------
+			var basicprice = $( "#basic--price" );
+			$( "#basic--custom-price" ).slider({
+			range: "min",
+			value: 0,
+			min: basic__price_min,
+			max: basic__price_max,
+			create: function() {
+			    basicprice.text( $( this ).slider( "value" ) );
+			},
+			slide: function( event, ui ) {
+			    basicprice.text( ui.value );
+			    $( "#deposit--info2" ).val(ui.value * 10);
+			  }
+			});
+
+
+    	//--------------------------------------calculator-experience-----------------------------
           var experience = $( "#experience--date-custom" );
           $( "#experience--date" ).slider({
           range: "min",
@@ -686,11 +684,10 @@
               $( "#experience--percent" ).val( ui.value * 3 + 7 + "%");
             }
           });
-          $( "#experience--percent" ).val( 10 + "%" );
-          $( "#experience--percent" ).val( ui.value * 3 + 7 + "%");
+          // $( "#experience--percent" ).val( ui.value * 3 + 7 + "%");
 
-        //------------------------------------
-        var experienceprice = $( "#experience--price" );
+    		//------------------------------------
+        	var experienceprice = $( "#experience--price" );
           $( "#experience--custom-price" ).slider({
           range: "min",
           value: 1,
@@ -705,8 +702,9 @@
           });
 
 
-      //--------------------------------------calculator-partner-----------------------------
-          var partner = $( "#partner--date-custom" );
+    	//--------------------------------------calculator-partner-----------------------------
+          var partner  = $("#partner--date-custom" );
+
           $( "#partner--date" ).slider({
           range: "min",
           value: 0,
@@ -716,26 +714,36 @@
               partner.text( $( this ).slider( "value" ) );
             },
             slide: function( event, ui ) {
-              partner.text( ui.value );
-              $( "#partner--percent" ).val( ui.value * 3 + 7 + "%" );
+              partner.text( ui.value * 10);
+	            if(ui.value == 1) {
+	            	$( "#partner--percent" ).val( 25 + "%" );
+	          	} else if (ui.value == 2){
+	          		 $( "#partner--percent" ).val( 60 + "%" );
+	      		} else if (ui.value == 3){
+	      			$( "#partner--percent" ).val( 100 + "%" );
+	      		}
             }
           });
-          $( "#partner--percent" ).val( 10 + "%" );
+            if(partner__date_min == 1) {
+	            $( "#partner--date-custom" ).text( 10 );
+	        }
+          $( "#partner--percent" ).val( 25 + "%" );
 
-        //------------------------------------
-        var partnerprice = $( "#partner--price" );
-          $( "#partner--custom-price" ).slider({
-          range: "min",
-          value: 0,
-          min: partner__price_min,
-          max: partner__price_max,
-          create: function() {
-                partnerprice.text( $( this ).slider( "value" ) );
-            },
-            slide: function( event, ui ) {
-                partnerprice.text( ui.value );
-              }
-          });
+
+       		//------------------------------------
+	       	var partnerprice = $( "#partner--price" );
+	          $( "#partner--custom-price" ).slider({
+	          range: "min",
+	          value: 0,
+	          min: partner__price_min,
+	          max: partner__price_max,
+	          create: function() {
+	                partnerprice.text( $( this ).slider( "value" ) );
+	            },
+	            slide: function( event, ui ) {
+	                partnerprice.text( ui.value );
+	              }
+	        });
 
 
       //--------------------------------------calculator-owner-----------------------------
